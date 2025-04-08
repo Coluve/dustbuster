@@ -1,17 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Testimonials | DustBuster Services</title>
-<link rel="stylesheet" href="/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials | DustBuster Services</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; background: #f7f7f7; color: #222; }
+    .nav-container {
+      background: white;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+    .nav-links a {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background: #0077cc;
+    }
+    @media (max-width: 700px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 1rem;
+      }
+      .nav-links.show {
+        display: flex;
+      }
+      .hamburger {
+        display: flex;
+      }
+    }
+    header {
+      background: #0077cc;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    .section {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .testimonial {
+      background: white;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    .testimonial p {
+      font-style: italic;
+    }
+    .testimonial span {
+      display: block;
+      text-align: right;
+      font-weight: bold;
+      margin-top: 0.8rem;
+      color: #0077cc;
+    }
+    .footer {
+      background: #eee;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
 <body>
-  <!-- Insert nav + responsive styles from index.html -->
+
   <div class="nav-container">
     <a href="/index.html" style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none;">
-        <img src="/assets/refined_icon_transparent.png" alt="DustBuster Logo" style="height: 32px;">
-        <span style="font-weight: bold; color: #0077cc; font-size: 1.1rem;">DustBuster</span>
-      </a>
-          <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+      <img src="/assets/refined_icon_transparent.png" alt="DustBuster Logo" style="height: 32px;">
+      <span style="font-weight: bold; color: #0077cc; font-size: 1.1rem;">DustBuster</span>
+    </a>
+    <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('show')">
       <div></div><div></div><div></div>
     </div>
     <div class="nav-links">
@@ -23,19 +109,32 @@
   </div>
 
   <header>
-    <h1>Client Testimonials</h1>
-    <p>Hear what our customers are saying about their experience</p>
+    <h1>Testimonials</h1>
+    <p>Real stories from real DustBuster clients</p>
   </header>
 
   <section class="section">
-    <h2 style="color: #0077cc; text-align:center;">Reviews</h2>
-    <blockquote style="font-style: italic; margin: 2rem auto; max-width: 600px;">“Absolutely spotless — my house felt like new. Will use again.”</blockquote>
-    <blockquote style="font-style: italic; margin: 2rem auto; max-width: 600px;">“Detail-oriented team, our office space has never looked better.”</blockquote>
-    <blockquote style="font-style: italic; margin: 2rem auto; max-width: 600px;">“They cleaned our car like it was going to a car show.”</blockquote>
+    <div class="testimonial">
+      <p>“Absolutely stunning results — my kitchen has never been this spotless. They worked around my toddler’s nap schedule like pros!”</p>
+      <span>— Marissa T.</span>
+    </div>
+    <div class="testimonial">
+      <p>“They showed up early, got straight to work, and made our entire office sparkle for a client visit. Worth every penny.”</p>
+      <span>— Jacob R.</span>
+    </div>
+    <div class="testimonial">
+      <p>“We had drywall dust everywhere from our remodel. DustBuster left the place fresher than before construction.”</p>
+      <span>— Daniel M.</span>
+    </div>
+    <div class="testimonial">
+      <p>“No joke — they cleaned my car so well I thought it had been detailed by a dealership.”</p>
+      <span>— Karla J.</span>
+    </div>
   </section>
 
   <div class="footer">
     &copy; 2025 DustBuster Services. All rights reserved.
   </div>
+
 </body>
 </html>
