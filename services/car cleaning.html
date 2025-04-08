@@ -1,37 +1,76 @@
-<!-- services/car-cleaning.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Car Cleaning Services | Dustbusters</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Cleaning | DustBuster Services</title>
   <style>
-    body {
-      font-family: system-ui, sans-serif;
-      margin: 0;
-      background-color: #f7f7f7;
-      color: #222;
-      line-height: 1.6;
+    body { font-family: system-ui, sans-serif; margin: 0; background: #f7f7f7; color: #222; }
+    .nav-container {
+      background: white;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+    .nav-links a {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background: #0077cc;
+    }
+    @media (max-width: 700px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 1rem;
+      }
+      .nav-links.show {
+        display: flex;
+      }
+      .hamburger {
+        display: flex;
+      }
     }
     header {
-      background-color: #0f4c81;
+      background: #0077cc;
       color: white;
-      padding: 2rem;
+      padding: 2rem 1rem;
       text-align: center;
     }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
     .section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
     }
     h2 {
-      margin-top: 2rem;
-      color: #0f4c81;
+      color: #0077cc;
     }
     .gallery {
       display: grid;
       gap: 1rem;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      margin: 1.5rem 0;
     }
     .gallery img {
       width: 100%;
@@ -40,49 +79,60 @@
     ul {
       padding-left: 1.5rem;
     }
-    footer {
+    .footer {
       background: #eee;
       text-align: center;
-      padding: 1.5rem;
+      padding: 2rem 1rem;
       font-size: 0.9rem;
+      color: #888;
       margin-top: 3rem;
-    }
-    a {
-      color: #0f4c81;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Car Cleaning Services</h1>
-  <p>Interior & exterior detailing to restore your vehicle’s shine and cleanliness</p>
-</header>
-
-<main class="section">
-  <h2>Service Overview</h2>
-  <p>Our professional car cleaning service is designed to give your vehicle a fresh, clean, and detailed finish. Whether you need a one-time deep clean or regular maintenance, we’ve got you covered.</p>
-
-  <h2>Visual Portfolio</h2>
-  <div class="gallery">
-    <img src="https://source.unsplash.com/featured/400x300?car-cleaning" alt="Car detailing">
-    <img src="https://source.unsplash.com/featured/401x300?car-interior" alt="Car interior cleaning">
-    <img src="https://source.unsplash.com/featured/402x300?auto-detail" alt="Auto detailing work">
+  <div class="nav-container">
+    <div style="font-weight: bold; color: #0077cc;">DustBuster</div>
+    <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+      <div></div><div></div><div></div>
+    </div>
+    <div class="nav-links">
+      <a href="/index.html">Home</a>
+      <a href="/booking.html">Booking</a>
+      <a href="/testimonials.html">Testimonials</a>
+      <a href="/contact.html">Contact</a>
+    </div>
   </div>
 
-  <h2>Customization Options</h2>
-  <ul>
-    <li>Interior vacuuming & shampooing</li>
-    <li>Dashboard, trim & leather conditioning</li>
-    <li>Exterior foam wash & wax</li>
-    <li>Headlight polishing</li>
-    <li>Rim & tire restoration</li>
-  </ul>
-</main>
+  <header>
+    <h1>Car Cleaning</h1>
+    <p>Interior and exterior detailing for a showroom-quality finish</p>
+  </header>
 
-<footer>
-  <p>&copy; 2025 Dustbusters. <a href="/index.html">Return to homepage</a></p>
-</footer>
+  <section class="section">
+    <h2>Service Overview</h2>
+    <p>Our expert team provides high-quality auto detailing for both interior and exterior surfaces. Whether it’s a full deep clean or a regular refresh, DustBuster ensures your vehicle looks and feels brand new.</p>
+
+    <h2>Visual Portfolio</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/featured/400x300?car-cleaning" alt="Car cleaning">
+      <img src="https://source.unsplash.com/featured/401x300?car-detailing" alt="Detailing service">
+      <img src="https://source.unsplash.com/featured/402x300?car-interior" alt="Clean car interior">
+    </div>
+
+    <h2>Customization Options</h2>
+    <ul>
+      <li>Interior vacuuming and shampooing</li>
+      <li>Leather and vinyl conditioning</li>
+      <li>Exterior foam wash and hand dry</li>
+      <li>Wax, polish, and paint protection</li>
+      <li>Rim and tire restoration</li>
+    </ul>
+  </section>
+
+  <div class="footer">
+    &copy; 2025 DustBuster Services. All rights reserved.
+  </div>
 
 </body>
 </html>

@@ -1,29 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Commercial Cleaning Services | Dustbusters</title>
-<style>/* same styles */</style>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commercial Cleaning | DustBuster Services</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; background: #f7f7f7; color: #222; }
+    .nav-container {
+      background: white;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+    .nav-links a {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background: #0077cc;
+    }
+    @media (max-width: 700px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 1rem;
+      }
+      .nav-links.show {
+        display: flex;
+      }
+      .hamburger {
+        display: flex;
+      }
+    }
+    header {
+      background: #0077cc;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    .section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h2 {
+      color: #0077cc;
+    }
+    .gallery {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      margin: 1.5rem 0;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    .footer {
+      background: #eee;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
 <body>
-<header><h1>Commercial Cleaning</h1><p>Professional cleaning for offices, storefronts, and shared workspaces</p></header>
-<main class="section">
-<h2>Service Overview</h2>
-<p>We deliver reliable commercial cleaning services to keep your business space fresh, safe, and professional. After-hours service available.</p>
-<h2>Visual Portfolio</h2>
-<div class="gallery">
-<img src="https://source.unsplash.com/featured/400x300?office-cleaning" alt="Office cleaning">
-<img src="https://source.unsplash.com/featured/401x300?clean-desk" alt="Workspace">
-<img src="https://source.unsplash.com/featured/402x300?janitor" alt="Cleaning floors">
-</div>
-<h2>Customization Options</h2>
-<ul>
-<li>Night & weekend availability</li>
-<li>Lobby, conference, & restroom cleaning</li>
-<li>Disinfecting high-traffic areas</li>
-<li>Flexible schedules (daily/weekly/monthly)</li>
-<li>Secure area protocols available</li>
-</ul>
-</main>
-<footer><p>&copy; 2025 Dustbusters. <a href="/index.html">Return to homepage</a></p></footer>
+
+  <div class="nav-container">
+    <div style="font-weight: bold; color: #0077cc;">DustBuster</div>
+    <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+      <div></div><div></div><div></div>
+    </div>
+    <div class="nav-links">
+      <a href="/index.html">Home</a>
+      <a href="/booking.html">Booking</a>
+      <a href="/testimonials.html">Testimonials</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+  </div>
+
+  <header>
+    <h1>Commercial Cleaning</h1>
+    <p>Professional-grade cleaning for offices, stores, and facilities</p>
+  </header>
+
+  <section class="section">
+    <h2>Service Overview</h2>
+    <p>We deliver reliable commercial cleaning services that keep your workspace clean, safe, and presentable. From executive offices to shared coworking areas, our team ensures your environment reflects your professionalism.</p>
+
+    <h2>Visual Portfolio</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/featured/400x300?office-cleaning" alt="Office cleaning">
+      <img src="https://source.unsplash.com/featured/401x300?clean-desk" alt="Workspace clean">
+      <img src="https://source.unsplash.com/featured/402x300?janitor" alt="Facility sanitation">
+    </div>
+
+    <h2>Customization Options</h2>
+    <ul>
+      <li>Lobby, breakroom, and restroom cleaning</li>
+      <li>Disinfecting high-touch surfaces and shared equipment</li>
+      <li>Glass, carpet, and floor care</li>
+      <li>Night and weekend scheduling available</li>
+      <li>Secure area protocols upon request</li>
+    </ul>
+  </section>
+
+  <div class="footer">
+    &copy; 2025 DustBuster Services. All rights reserved.
+  </div>
+
 </body>
 </html>

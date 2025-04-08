@@ -1,29 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Window Cleaning Services | Dustbusters</title>
-<style>/* same styles */</style>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Window Cleaning | DustBuster Services</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; background: #f7f7f7; color: #222; }
+    .nav-container {
+      background: white;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+    .nav-links a {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background: #0077cc;
+    }
+    @media (max-width: 700px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 1rem;
+      }
+      .nav-links.show {
+        display: flex;
+      }
+      .hamburger {
+        display: flex;
+      }
+    }
+    header {
+      background: #0077cc;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    .section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h2 {
+      color: #0077cc;
+    }
+    .gallery {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      margin: 1.5rem 0;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    .footer {
+      background: #eee;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
 <body>
-<header><h1>Window Cleaning</h1><p>Crystal-clear glass for homes and commercial properties</p></header>
-<main class="section">
-<h2>Service Overview</h2>
-<p>Interior and exterior window cleaning that removes grime, streaks, and buildup — safely and efficiently.</p>
-<h2>Visual Portfolio</h2>
-<div class="gallery">
-<img src="https://source.unsplash.com/featured/400x300?window-cleaning" alt="Washed window">
-<img src="https://source.unsplash.com/featured/401x300?clean-glass" alt="Glass service">
-<img src="https://source.unsplash.com/featured/402x300?high-rise-windows" alt="Commercial window cleaning">
-</div>
-<h2>Customization Options</h2>
-<ul>
-<li>2nd and 3rd story glass cleaning</li>
-<li>Screen and sill washing</li>
-<li>Storefront window services</li>
-<li>Stain & paint removal</li>
-<li>Eco-safe cleaning solutions</li>
-</ul>
-</main>
-<footer><p>&copy; 2025 Dustbusters. <a href="/index.html">Return to homepage</a></p></footer>
+
+  <div class="nav-container">
+    <div style="font-weight: bold; color: #0077cc;">DustBuster</div>
+    <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+      <div></div><div></div><div></div>
+    </div>
+    <div class="nav-links">
+      <a href="/index.html">Home</a>
+      <a href="/booking.html">Booking</a>
+      <a href="/testimonials.html">Testimonials</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+  </div>
+
+  <header>
+    <h1>Window Cleaning</h1>
+    <p>Crystal-clear glass, spotless frames — inside and out</p>
+  </header>
+
+  <section class="section">
+    <h2>Service Overview</h2>
+    <p>Our window cleaning services cover interior and exterior glass surfaces. We remove streaks, dust, pollen, and mineral buildup — restoring natural light and curb appeal.</p>
+
+    <h2>Visual Portfolio</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/featured/400x300?window-cleaning" alt="Clean glass">
+      <img src="https://source.unsplash.com/featured/401x300?glass-wash" alt="Spotless windows">
+      <img src="https://source.unsplash.com/featured/402x300?high-rise-window" alt="Commercial window clean">
+    </div>
+
+    <h2>Customization Options</h2>
+    <ul>
+      <li>Interior + exterior glass washing</li>
+      <li>Screen and sill cleaning</li>
+      <li>Paint, sticker, and stain removal</li>
+      <li>High-reach / multi-story services available</li>
+      <li>Residential & commercial packages</li>
+    </ul>
+  </section>
+
+  <div class="footer">
+    &copy; 2025 DustBuster Services. All rights reserved.
+  </div>
+
 </body>
 </html>
