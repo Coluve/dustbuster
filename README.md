@@ -55,7 +55,7 @@ Deployment Notes
 
 1. This repository was initialized from a static website template.
 2. Website content is composed of HTML, CSS, and form integrations.
-3. A custom domain ({{PROJECT_DOMAIN}}) is assigned using a CNAME file.
+3. A custom domain dustbuster.io is assigned using a CNAME file.
 4. GitHub Pages is configured to deploy from the `main` branch.
 5. DNS configuration points to GitHub Pages via Namecheap control panel.
 
