@@ -117,20 +117,20 @@
     <p>We’d love to hear from you — let us know how we can help</p>
   </header>
 
-  <section class="section">
-    <form>
-      <label for="name">Your Name</label>
-      <input type="text" id="name" required>
-
-      <label for="email">Your Email</label>
-      <input type="email" id="email" required>
-
-      <label for="message">Your Message</label>
-      <textarea id="message" rows="5" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    <section class="section">
+        <form action="https://formspree.io/f/xzzekqln" method="POST">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required />
+      
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required />
+      
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+      
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
 
   <div class="footer">
     &copy; 2025 DustBuster Services. All rights reserved.
