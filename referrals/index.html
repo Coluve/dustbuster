@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Referrals | DustBuster Services</title>
+  <title>Refer & Earn | DustBuster Services</title>
   <style>
     body {
       font-family: system-ui, sans-serif;
@@ -12,7 +12,6 @@
       color: #222;
       line-height: 1.6;
     }
-
     .nav-container {
       background: white;
       border-bottom: 1px solid #eee;
@@ -21,43 +20,70 @@
       align-items: center;
       padding: 1rem 2rem;
     }
-
     .nav-links {
       display: flex;
       gap: 2rem;
     }
-
     .nav-links a {
       color: #0077cc;
       text-decoration: none;
       font-weight: bold;
     }
-
     .header {
       background: #0077cc;
       color: white;
       padding: 2.5rem 1rem;
       text-align: center;
     }
-
     .header h1 {
       margin: 0;
       font-size: 2.5rem;
     }
-
     .section {
       max-width: 900px;
       margin: 0 auto;
       padding: 2rem 1.5rem;
     }
-
-    h2 {
-      color: #0077cc;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 0.3rem;
+    .highlight {
+      background: #e0f7ff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 1.2rem;
+    }
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
       margin-top: 2rem;
     }
-
+    .step {
+      background: #fff;
+      padding: 1rem 1.5rem;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+    .rewards {
+      background: #fff;
+      margin-top: 3rem;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .cta button {
+      background: #0077cc;
+      color: white;
+      border: none;
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
     .footer {
       background: #eee;
       text-align: center;
@@ -66,45 +92,9 @@
       color: #888;
       margin-top: 3rem;
     }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    ul li {
-      margin-bottom: 0.5rem;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1rem;
-    }
-
-    table, th, td {
-      border: 1px solid #ccc;
-    }
-
-    th, td {
-      padding: 0.6rem;
-      text-align: left;
-    }
-
-    th {
-      background: #f0f0f0;
-    }
   </style>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16990272095"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-16990272095');
-</script>
 </head>
 <body>
-
   <div class="nav-container">
     <a href="/" style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none;">
       <img src="/assets/logo.png" alt="DustBuster Logo" style="height: 32px;">
@@ -120,88 +110,51 @@
   </div>
 
   <header class="header">
-    <h1>Clean & Earn Referral Program</h1>
-    <p>Rewarding you for spreading the sparkle ✨</p>
+    <h1>Refer Friends & Earn Rewards</h1>
+    <p>Give 10%, Get 10% – It's that simple ✨</p>
   </header>
 
   <section class="section">
-    <h2>🏁 Stage 1: Initial Launch (Brand Awareness)</h2>
-    <p><strong>🎁 Incentive:</strong> Both Referrer and Referral Get 10% Off</p>
-    <ul>
-      <li><strong>Referrer:</strong> Gets 10% off their next cleaning (1-time per referral).</li>
-      <li><strong>Referral:</strong> Gets 10% off their first service.</li>
-    </ul>
-    <p><strong>Tactics:</strong></p>
-    <ul>
-      <li>Upsell the referral’s first visit to a premium deep clean with the 10% discount.</li>
-      <li>Offer easy online scheduling with a referral code field.</li>
-    </ul>
+    <div class="highlight">
+      <p>Your referral link:</p>
+      <p><strong>https://dustbuster.com/ref/yourcode</strong></p>
+      <p>Share it with friends, family, neighbors, and co-workers!</p>
+    </div>
 
-    <h2>🚀 Stage 2: Growth Flywheel (Repeat Referrals)</h2>
-    <p><strong>🎁 Incentive:</strong> Tiered Rewards for Referrer</p>
-    <ul>
-      <li>1 referral: 10% off next clean</li>
-      <li>3 referrals: One free add-on (e.g., oven, fridge, windows)</li>
-      <li>5 referrals: 1 free standard clean</li>
-      <li>10 referrals: 1 month of bi-weekly cleaning at 50% off</li>
-    </ul>
-    <p><strong>Tactics:</strong></p>
-    <ul>
-      <li>Free rewards are time-bound (must be redeemed in 30 days).</li>
-      <li>Add-on services increase value but are lower cost to you.</li>
-      <li>Encourage referrals to refer others (referral loops).</li>
-    </ul>
+    <div class="steps">
+      <div class="step">
+        <strong>1. Share Your Link 📤</strong>
+        <p>Send your personal link via text, social, or email.</p>
+      </div>
+      <div class="step">
+        <strong>2. They Book & Save 💸</strong>
+        <p>Your friend gets 10% off their first clean.</p>
+      </div>
+      <div class="step">
+        <strong>3. You Get Rewarded 🎉</strong>
+        <p>You get 10% off your next clean – stack rewards for big savings!</p>
+      </div>
+    </div>
 
-    <h2>💎 Stage 3: VIP Loyalty Tier (Sustained Growth)</h2>
-    <p><strong>🎁 Incentive:</strong> “Clean Circle” Members (Top Referrers)</p>
-    <ul>
-      <li>15+ referrals = Lifetime 15% off</li>
-      <li>Priority holiday scheduling</li>
-      <li>Recognition on your site/socials</li>
-    </ul>
-    <p><strong>Tactics:</strong> Leverage their loyalty and social reach.</p>
+    <div class="rewards">
+      <h2>🎁 Referral Rewards</h2>
+      <ul>
+        <li>1 referral = 10% off</li>
+        <li>3 referrals = Free add-on (oven/fridge/windows)</li>
+        <li>5 referrals = Free standard clean</li>
+        <li>10 referrals = 1 month of bi-weekly cleaning at 50% off</li>
+      </ul>
+    </div>
 
-    <h2>📲 Implementation</h2>
-    <ul>
-      <li><strong>Referral Tracking:</strong> Unique code/link sent via email/SMS, QR cards after cleans.</li>
-      <li><strong>Messaging:</strong> “Help your friends get a sparkling home—and save money.”</li>
-      <li><strong>Creative:</strong> Leave-behind cards, social templates, referral contests.</li>
-    </ul>
-
-    <h2>📈 Metrics to Monitor</h2>
-    <table>
-      <tr>
-        <th>Metric</th>
-        <th>What it Tells You</th>
-      </tr>
-      <tr>
-        <td>Referral conversion rate</td>
-        <td>Quality of referrals</td>
-      </tr>
-      <tr>
-        <td>Average revenue per referred customer</td>
-        <td>Long-term value</td>
-      </tr>
-      <tr>
-        <td>Referral channel success</td>
-        <td>Optimize outreach method</td>
-      </tr>
-      <tr>
-        <td>Churn rate post-reward</td>
-        <td>Customer retention value</td>
-      </tr>
-    </table>
-
-    <h2>💡 Revenue-Boosting Tactics</h2>
-    <ul>
-      <li>Time rewards during slow seasons</li>
-      <li>Require full-price booking before discount</li>
-      <li>Offer upgrades instead of cash discounts</li>
-    </ul>
+    <div class="cta">
+      <button onclick="navigator.clipboard.writeText('https://dustbuster.com/ref/yourcode')">
+        📋 Copy My Link
+      </button>
+    </div>
   </section>
 
   <div class="footer">
-    &copy; 2025 DustBuster Services. All rights reserved.
+    &copy; 2025 DustBuster Services. Share the sparkle.
   </div>
 </body>
 </html>
